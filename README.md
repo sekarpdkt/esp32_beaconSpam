@@ -11,7 +11,7 @@ The goal of this is to motivate people to get into hacking, electronics and Ardu
 
 ## About
 
-![network scanner](https://raw.githubusercontent.com/spacehuhn/esp8266_beaconSpam/master/img/networkscanner.jpg)
+![network scanner](https://github.com/Tnze/esp32_beaconSpam/raw/master/img/networkscanner.jpg)
 
 The Arduino sketch comes with 50 default SSID names, but you can edit that list easily in the source code :).  
 By constantly broadcasting the so called beacon frames, your standard WiFi scanner will think there are active networks nearby and adds them to the list.  

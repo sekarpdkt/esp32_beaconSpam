@@ -10,21 +10,6 @@ const bool appendSpaces = true; // makes all SSIDs 32 characters long to improve
   - don't add duplicates! You have to change one character at least
 */
 const char ssids[] PROGMEM = {
-  "大家好\n"
-  "我是来自\n"
-  "九号公寓\n"
-  "某个宿舍\n"
-  "的一名\n"
-  "普普通通\n"
-  "的学生\n"
-  "在这里\n"
-  "我想说\n"
-  "不是针对\n"
-  "你们其中一个\n"
-  "而是说\n"
-  "在座的各位\n"
-  "你们全都是\n"
-  "垃圾\n"
   "Ping’s Landing\n"
   "The Ping in the North\n"
   "This LAN Is My LAN\n"
