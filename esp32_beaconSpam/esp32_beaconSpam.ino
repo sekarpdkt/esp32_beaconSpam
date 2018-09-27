@@ -1,6 +1,6 @@
 // ===== Settings ===== //
 const uint8_t channels[] = {1, 6, 11}; // used Wi-Fi channels (available: 1-14)
-const bool wpa2 = false; // WPA2 networks
+const bool wpa2 = true; // WPA2 networks
 const bool appendSpaces = true; // makes all SSIDs 32 characters long to improve performance
 
 /*
@@ -10,6 +10,21 @@ const bool appendSpaces = true; // makes all SSIDs 32 characters long to improve
   - don't add duplicates! You have to change one character at least
 */
 const char ssids[] PROGMEM = {
+  "Mom Use This One\n"
+  "Abraham Linksys\n"
+  "Benjamin FrankLAN\n"
+  "Martin Router King\n"
+  "John Wilkes Bluetooth\n"
+  "Pretty Fly for a Wi-Fi\n"
+  "Bill Wi the Science Fi\n"
+  "I Believe Wi Can Fi\n"
+  "Tell My Wi-Fi Love Her\n"
+  "No More Mister Wi-Fi\n"
+  "LAN Solo\n"
+  "The LAN Before Time\n"
+  "Silence of the LANs\n"
+  "House LANister\n"
+  "Winternet Is Coming\n"
   "Ping’s Landing\n"
   "The Ping in the North\n"
   "This LAN Is My LAN\n"
@@ -233,7 +248,7 @@ void loop() {
       if (appendSpaces) {
         for (int k = 0; k < 3; k++) {
           //packetCounter += wifi_send_pkt_freedom(beaconPacket, packetSize, 0) == 0;
-          Serial.printf("size: %d \n", packetSize);
+          //Serial.printf("size: %d \n", packetSize);
           packetCounter += esp_wifi_80211_tx(ESP_IF_WIFI_STA, beaconPacket, packetSize, 0) == 0;
           delay(1);
         }
